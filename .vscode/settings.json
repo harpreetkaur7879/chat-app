@@ -1,0 +1,10 @@
+{
+    "search.useGlobalIgnoreFiles": false,
+    "search.useParentIgnoreFiles": false,
+    "github.copilot.enable": {
+        "plaintext": true,
+        "markdown": true,
+        "scminput": true,
+        "Suggestions Filtering": true
+    }
+}
