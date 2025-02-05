@@ -4,7 +4,8 @@ A real-time chat application built using the MERN stack with authentication, rea
 
 
 🖼 Screenshots
-1.png, 2.png, 3.png, 4.png
+Frontend: 1.png, 2.png, 3.png, 4.png
+Backend: 5.png
 
 ## ✨ Features
 - ✅ User Authentication (Signup, Login, Logout)
