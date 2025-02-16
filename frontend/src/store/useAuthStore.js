@@ -39,24 +39,17 @@ export const useAuthStore = create((set,get) => ({
     },
 
     signup: async (data) => {
-        set({isSigningUp:true});
-        try {
-            const res = await axiosInstance.post("/auth/signup", data);
-            set({ authUser: res.data });
-            toast.success("Account created successfully");
-            
-          } catch (error) {
-            if (error.response && error.response.data && error.response.data.message) {
-                toast.error(error.response.data.message); // Display the server message
-            } else {
-                // Fallback error message for other cases (e.g., network issues)
-                console.log(error);
-                toast.error("An unexpected error occurred. Please try again.");
-               
-            }
-          } finally {
-            set({ isSigningUp: false });
-          }
+      set({ isSigningUp: true });
+      try {
+        const res = await axiosInstance.post("/auth/signup", data);
+        set({ authUser: res.data });
+        toast.success("Account created successfully");
+        get().connectSocket();
+      } catch (error) {
+        toast.error(error.response.data.message);
+      } finally {
+        set({ isSigningUp: false });
+      }
     },
 
     login: async (data) => {
