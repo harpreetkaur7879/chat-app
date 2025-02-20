@@ -7,6 +7,7 @@ A real-time chat application built using the MERN stack with authentication, rea
 Frontend: 1.png, 2.png, 3.png, 4.png, 6.png, 7.png, 8.png, 9.png
 Backend: 5.png
 
+
 ## ✨ Features
 - ✅ User Authentication (Signup, Login, Logout)
 - 🔐 Hashed Passwords using Bcrypt
